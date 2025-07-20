@@ -24,9 +24,22 @@
             grid-template-columns: repeat(3, min-content max-content);
         }
 
-        @media only screen and (max-width: $bp-small){
-            grid-template-columns: min-content max-content;
+          @media only screen and (max-width: $bp-small) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            justify-items: center;
+            row-gap: 1.6rem;
+
+            .realtors__img {
+            grid-row: 1;
+            }
+
+            .realtors__details {
+            grid-row: 2;
+            text-align: center;
+            }
         }
+
     }
 
     &__img {
@@ -41,3 +54,4 @@
         margin-top: -3px;
     }
 }
+

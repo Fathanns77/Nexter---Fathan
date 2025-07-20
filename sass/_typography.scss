@@ -45,10 +45,10 @@
     text-transform: uppercase;
     padding: 1.8rem 3rem;
     cursor: pointer;
-    transition: all 2s ;
+    transition: all .5s ;
 
     &:hover {
-        background-color: $color-primary-dark;
+        background-color: $color-grey-dark-2;
     }
 }
 
